@@ -241,3 +241,11 @@ echo "- Work with message signatures"
 echo "- Use Bitcoin descriptors"
 echo ""
 echo "NOTE: This script is specifically designed to work with Bitcoin Core v28." 
+
+#this is my additional example on step 4 in exercises
+
+
+source ./functions.sh
+
+echo "Checking my block count..."
+get_block_count

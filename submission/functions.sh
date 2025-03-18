@@ -116,3 +116,8 @@ trim() {
   var="${var%"${var##*[![:space:]]}"}"
   printf '%s' "$var"
 }
+
+get_block_count() {
+    bitcoin-cli -regtest getblockcount || echo "Error: bitcoin-cli not found or Regtest not running."
+}
+
